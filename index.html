@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>鼠标焦点</title>
+    <style type="text/css">
+        .main_div{
+            width: 40%;
+            height: 200px;
+            background-color: gray;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+<div class="main_div">
+
+</div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.10.0/jquery.min.js"></script>
+<script type="text/javascript">
+    $('.main_div').mouseover(function(){
+        console.log("helloworld");
+        $(this).css("margin-top","10px");
+        $(this).css("box-shadow","10px 10px 10px");
+    });
+    $('.main_div').mouseout(function(){
+        console.log("helloworld");
+        $(this).css("margin-top","0px");
+        $(this).css("box-shadow","0px 0px 0px");
+    });
+</script>
+</html>
